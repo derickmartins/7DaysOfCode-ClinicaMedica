@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(styles/cabecalho.css);
+@import url(styles/consultas.css);
+@import url(styles/botoesFlutuantes.css);
+@import url(styles/rodape.css);
+
+:root {
+    --font-principal: "Montserrat", sans-serif;
+    --cor-primeira: #ececec;
+    --cor-segunda: #ffffff;
+    --cor-terceira: #4894FF;
+    --cor-quarta: #ffb058;
+    --cor-quinta: #f6f6f6;
+    --cor-font-primaria: #464646;
+    --cor-font-secundaria: #a3a3a3;
+}
+
+body {
+    background-color: var(--cor-primeira);
+    font-family: var(--font-principal);
+    color: var(--cor-font-primaria);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho, main {
+        margin-left: 15vw;
+    } 
+}

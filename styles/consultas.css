@@ -1,0 +1,156 @@
+.main-consultas {
+    padding-bottom: 4.75em;
+}
+
+.consultas {
+    padding: 0 1em;
+}
+
+.consultas__dia {
+    font-weight: 700;
+    padding: 1em 1em 0.5em;
+}
+
+.lista__info-cliente {
+    background-color: var(--cor-segunda);
+    display: flex;
+    align-items: center;
+    padding: 1em 1em 0.75em;
+    border-bottom: 1px solid var(--cor-primeira);
+    border-radius: 8px 8px 0 0;
+}
+
+.info-cliente__imagem {
+    border-radius: 50%;
+    width: 10.8%;
+}
+
+.info-cliente__detalhes {
+    padding-left: 1em;
+    margin-right: auto;
+}
+
+.info-cliente__detalhes div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-cliente__nome {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.info-cliente__tipo-consulta {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.info-cliente__icone-mensagem {
+    margin-bottom: auto;
+}
+
+.lista__acesso-cliente {
+    background-color: var(--cor-segunda);
+    padding: 0.5em 1em 1em;
+    margin-bottom: 1em;
+    border-radius: 0 0 8px 8px;
+}
+
+.acesso-cliente__horario {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.acesso-cliente__botao {
+    display: flex;
+    gap: 1.125em;
+    padding-top: 0.5em;
+}
+
+.acesso-cliente__botao__video, .acesso-cliente__botao__audio {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8125rem 1rem;
+    width: 100%;
+    
+}
+
+.acesso-cliente__botao__video {
+    color: var(--cor-segunda);
+    background-color: var(--cor-quarta);
+}
+
+.acesso-cliente__botao__audio {
+    background-color: var(--cor-segunda);
+    border: 1px solid var(--cor-primeira);
+    color: var(--cor-font-primaria);
+}
+
+.acesso-cliente__botao-endereco {
+    font-family: var(--font-principal);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8125rem 0;
+    width: 100%;
+    color: var(--cor-segunda);
+    background-color: var(--cor-terceira);
+    margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    .consultas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5em;
+        padding: 0 2em;
+    }
+
+    .consultas__dia {
+        padding: 1em 2em 0.5em;
+    }
+
+    .lista__acesso-cliente {
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .consultas {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4.125em;
+        padding: 0 1em;
+    }
+
+    .consultas__dia {
+        padding: 1.5em 1em 3.5em;
+    }
+
+    .info-cliente__imagem {
+        width: 15.4%;
+    }
+
+    .info-cliente__nome {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .acesso-cliente__horario {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .acesso-cliente__botao {
+        gap: 1.5em;
+    }
+    
+}

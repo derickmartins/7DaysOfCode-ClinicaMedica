@@ -1,0 +1,41 @@
+.cabecalho {
+    display: flex;
+    padding: 2em 1em 1em;
+    gap: 1em;
+}
+
+.cabecalho__img-usuario {
+    border-radius: 50%;
+    width: 57px;
+}
+
+.cabecalho__titulo {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+.cabecalho__consultas {
+    font-size: 14px;
+    color: var(--cor-font-secundaria);
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        padding: 2em 1.50em 0.5em;
+    }
+
+    .cabecalho__img-usuario {
+        border-radius: 50%;
+        width: 96px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 31px;
+        line-height: 50px;
+    }
+
+    .cabecalho__consultas {
+        font-size: 18px;
+    }
+}

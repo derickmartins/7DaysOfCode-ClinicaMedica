@@ -1,0 +1,67 @@
+.rodape {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0.5em 0.75em;
+    background-color: var(--cor-segunda);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 12px 12px 0 0;
+}
+
+.rodape__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2px;
+    width: 3.75em;
+}
+
+#nav__texto-calendario {
+    color: var(--cor-terceira);
+}
+
+.rodape__nav__texto {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape {
+        padding: 2em 0 0 1em;
+        width: 13.5vw;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        border-right: 4px solid var(--cor-font-secundaria);
+        border-radius: 0;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .rodape__nav {
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75em;
+    }
+
+    .rodape__nav__texto {
+        font-size: 28px;
+        line-height: 1.25;
+        font-weight: 700;
+        color: var(--cor-font-secundaria);
+    }
+
+    .rodape__nav img {
+        display: none;
+    }
+}
